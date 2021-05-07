@@ -5,6 +5,11 @@
 
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-large) {
+        display: none;
+        opacity: 0;
+    }
 }
 
 .nav-btn {
