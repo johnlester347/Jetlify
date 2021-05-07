@@ -1,18 +1,27 @@
 .features {
-    grid-column: center-start / center-end;
+    grid-column: 2 / -1;
+    padding: 10rem 10rem;
+    
+    background-image: linear-gradient(rgba(#000, .80), rgba(#000, .80)), url(../img/jet1.jpg);
+    background-size: cover;
 
-    margin: 15rem 0;
 
     display: grid;
     //grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 6rem;
     align-items: start;
 
+    @media only screen and (max-width: $bp-large) {
+        grid-column: 1 / -1;
+    }
+
     @media only screen and (max-width: $bp-small) {
-        margin: 8rem 0;
+        margin: 0rem 0;
         grid-gap: 5rem;
     }
+
+    color: $color-grey-light-1;
 }
 
 .feature {
@@ -21,11 +30,12 @@
     grid-gap: 1.5rem 2.5rem;
     
     &__icon {
-        fill: $color-primary;
+        fill: #3c40c6;
         height: 4.5rem;
         width: 4.5rem;
         grid-row: 1 / span 2;
         transform: translateY(-1rem);
+
     }
 
     &__text {

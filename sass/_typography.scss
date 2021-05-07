@@ -31,6 +31,10 @@
     // font-style: italic;
     text-transform: uppercase;
     color: $color-primary;
+
+    &--light {
+        color: #fff;
+    }
 }
 
 .heading-4 {
@@ -42,7 +46,7 @@
     }
 
     &--dark {
-        color: $color-grey-dark-1;
+        color: #1e6c99;
     }
 }
 
